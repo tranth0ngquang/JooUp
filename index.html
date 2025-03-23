@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="./assets/css/custom-style.css" />
+
+
+  <title>Modernize Bootstrap Admin</title>
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+  <!-- CDN FontAweSome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-6KX4fXo1uAe0G8Znh+UHPNk3H/iIyOR5cYc3DO4rQTfqtnAHeS3qyZnGfG1VFpMdcbV24pTjuHTsH5jE3Y6tAA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="./assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Header Start -->
+  <header class="header-fp p-0 w-100 topbar">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-2 py-lg-10 ">
+      <div class="custom-container d-flex align-items-center justify-content-between">
+        <a href="../main/frontend-landingpage.html" class="text-nowrap logo-img" style="max-width: 10%;">
+          <!-- <img src="./assets/images/logos/dark-logo.svg" class="dark-logo" alt="Logo-Dark" />
+          <img src="./assets/images/logos/light-logo.svg" class="light-logo" alt="Logo-light" /> -->
+          <img src="./assets/images/logos/Jooup-logo.png" class="img-fluid" alt="Logo-Jooup"  />
+        </a>
+        <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="ti ti-menu-2 fs-8"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 gap-xl-7 gap-8 mb-lg-0">
+            <li class="nav-item rounded-circle dropdown">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="javascript:void(0)" id="drop2"
+                aria-expanded="false">
+                What's JoouUp <i class="fa fa-angle-down ms-2"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-start dropdown-menu-animate-up" aria-labelledby="drop2">
+                <div class="message-body">
+                  <a href="javascript:void(0)"
+                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item nav-link fs-4 fw-bold text-dark link-primary">
+                    About Us
+                  </a>
+
+                  <a href="javascript:void(0)"
+                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item nav-link fs-4 fw-bold text-dark link-primary">
+                    Product Overview
+                  </a>
+
+                  <a href="javascript:void(0)"
+                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item nav-link fs-4 fw-bold text-dark link-primary">
+                    Solution
+                  </a>
+
+                  <a href="javascript:void(0)"
+                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item nav-link fs-4 fw-bold text-dark link-primary">
+                    Integration
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary"
+                href="../main/frontend-blogpage.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary" href="../main/index.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold text-dark link-primary"
+                href="../main/frontend-pricingpage.html">Partners</a>
+            </li>
+
+
+            <li class="nav-item nav-icon-hover-bg rounded-circle d-none d-lg-flex">
+              <a class="" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#searchBarModal">
+                <i class="ti ti-search fs-6"></i>
+              </a>
+            </li>
+
+
+            <li class="nav-item nav-icon-hover-bg rounded-circle dropdown">
+              <a class="nav-link" href="javascript:void(0)" id="drop2" aria-expanded="false">
+                <img src="./assets/images/svgs/icon-flag-en.svg" alt="modernize-img" width="20px" height="20px"
+                  class="rounded-circle object-fit-cover round-20" />
+              </a>
+              <div class="dropdown-menu dropdown-menu-start dropdown-menu-animate-up" aria-labelledby="drop2">
+                <div class="message-body">
+                  <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                    <div class="position-relative">
+                      <img src="./assets/images/svgs/icon-flag-en.svg" alt="modernize-img" width="20px" height="20px"
+                        class="rounded-circle object-fit-cover round-20" />
+                    </div>
+                    <p class="mb-0 fs-3">English (UK)</p>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                    <div class="position-relative">
+                      <img src="./assets/images/svgs/icon-flag-cn.svg" alt="modernize-img" width="20px" height="20px"
+                        class="rounded-circle object-fit-cover round-20" />
+                    </div>
+                    <p class="mb-0 fs-3">中国人 (Chinese)</p>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                    <div class="position-relative">
+                      <img src="./assets/images/svgs/icon-flag-fr.svg" alt="modernize-img" width="20px" height="20px"
+                        class="rounded-circle object-fit-cover round-20" />
+                    </div>
+                    <p class="mb-0 fs-3">français (French)</p>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                    <div class="position-relative">
+                      <img src="./assets/images/svgs/icon-flag-sa.svg" alt="modernize-img" width="20px" height="20px"
+                        class="rounded-circle object-fit-cover round-20" />
+                    </div>
+                    <p class="mb-0 fs-3">عربي (Arabic)</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <a href="../main/authentication-login.html" class="btn btn-primary py-8 px-9">Log In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+  <!-- ------------------------------------- -->
+
+  <!-- Responsive Sidebar Start -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a href="../main/frontend-landingpage.html">
+        <img src="./assets/images/logos/dark-logo.svg" alt="Logo-light" />
+      </a>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled ps-0">
+
+        <li class="mb-1">
+          <div class="accordion accordion-flush" id="accordionFlushExample2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-WSY">
+                <button class="accordion-button collapsed  px-0 fs-4 w-100 py-2 text-dark link-primary" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-WIY" aria-expanded="false"
+                  aria-controls="flush-collapseThree">
+                  <span class="">What's JooUp</span>
+                </button>
+              </h2>
+              <div id="flush-WIY" class="accordion-collapse collapse" aria-labelledby="flush-WIY"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="message-body">
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <p class="mb-0 fs-3">About us</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <p class="mb-0 fs-3">Product Overview</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <p class="mb-0 fs-3">Solution</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <p class="mb-0 fs-3">Integration</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="mb-1">
+          <a href="../main/frontend-aboutpage.html" class="px-0 fs-4 d-block text-dark link-primary w-100 py-2">
+            About Us
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="../main/frontend-blogpage.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Blog
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="../main/frontend-portfoliopage.html"
+            class="px-0 fs-4 d-flex align-items-center justify-content-start gap-2 w-100 py-2 text-dark link-primary">
+            Portfolio
+            <span class="badge text-primary bg-primary-subtle fs-2 fw-bolder hstack">New</span>
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="../main/index.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Dashboard
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="../main/frontend-pricingpage.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Pricing
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="../main/frontend-contactpage.html" class="px-0 fs-4 d-block w-100 py-2 text-dark link-primary">
+            Contact
+          </a>
+        </li>
+        <li class="mb-1">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed  px-0 fs-4 w-100 py-2 text-dark link-primary" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                  aria-controls="flush-collapseThree">
+                  <img src="./assets/images/svgs/icon-flag-en.svg" alt="modernize-img" width="20px" height="20px"
+                    class="rounded-circle object-fit-cover round-20" />
+                  <span class="ms-3">English (UK)</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="message-body">
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <div class="position-relative">
+                        <img src="./assets/images/svgs/icon-flag-en.svg" alt="modernize-img" width="20px" height="20px"
+                          class="rounded-circle object-fit-cover round-20" />
+                      </div>
+                      <p class="mb-0 fs-3">English (UK)</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <div class="position-relative">
+                        <img src="./assets/images/svgs/icon-flag-cn.svg" alt="modernize-img" width="20px" height="20px"
+                          class="rounded-circle object-fit-cover round-20" />
+                      </div>
+                      <p class="mb-0 fs-3">中国人 (Chinese)</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <div class="position-relative">
+                        <img src="./assets/images/svgs/icon-flag-fr.svg" alt="modernize-img" width="20px" height="20px"
+                          class="rounded-circle object-fit-cover round-20" />
+                      </div>
+                      <p class="mb-0 fs-3">français (French)</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
+                      <div class="position-relative">
+                        <img src="./assets/images/svgs/icon-flag-sa.svg" alt="modernize-img" width="20px" height="20px"
+                          class="rounded-circle object-fit-cover round-20" />
+                      </div>
+                      <p class="mb-0 fs-3">عربي (Arabic)</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="mt-3">
+          <a href="../main/authentication-login.html" class="btn btn-primary w-100">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Responsive Sidebar End -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/W_ADbeKyP4c?si=-63qC3_L1fI5wEsO"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  Search Bar -->
+  <div class="modal fade" id="searchBarModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content rounded-1">
+        <div class="modal-header border-bottom">
+          <input type="search" class="form-control fs-3" placeholder="Search here" id="search" />
+          <a href="javascript:void(0)" data-bs-dismiss="modal" class="lh-1">
+            <i class="ti ti-x fs-5 ms-3"></i>
+          </a>
+        </div>
+        <div class="modal-body message-body" data-simplebar="">
+          <h5 class="mb-0 fs-5 p-1">Quick Page Links</h5>
+          <ul class="list mb-0 py-2">
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Modern</span>
+                <span class="text-muted d-block">/dashboards/dashboard1</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Dashboard</span>
+                <span class="text-muted d-block">/dashboards/dashboard2</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Contacts</span>
+                <span class="text-muted d-block">/apps/contacts</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Posts</span>
+                <span class="text-muted d-block">/apps/blog/posts</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Detail</span>
+                <span
+                  class="text-muted d-block">/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Shop</span>
+                <span class="text-muted d-block">/apps/ecommerce/shop</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Modern</span>
+                <span class="text-muted d-block">/dashboards/dashboard1</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Dashboard</span>
+                <span class="text-muted d-block">/dashboards/dashboard2</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Contacts</span>
+                <span class="text-muted d-block">/apps/contacts</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Posts</span>
+                <span class="text-muted d-block">/apps/blog/posts</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Detail</span>
+                <span
+                  class="text-muted d-block">/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow</span>
+              </a>
+            </li>
+            <li class="p-1 mb-1 bg-hover-light-black">
+              <a href="javascript:void(0)">
+                <span class="d-block">Shop</span>
+                <span class="text-muted d-block">/apps/ecommerce/shop</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-wrapper overflow-hidden">
+    <!-- banner Start -->
+    <!-- ------------------------------------- -->
+    <section class="bg-primary-subtle pt-7 py-lg-0 py-7">
+      <div class="custom-container">
+        <div class="row justify-content-center pt-lg-5 mb-4">
+          <div class="col-lg-8">
+            <h1 class="text-link-color fw-bolder text-center fs-13 mb-0 pt-lg-2">
+              <span class="text-primary">Personalization</span> to improve your<span class="text-primary"> bottom
+                line</span>
+            </h1>
+          </div>
+        </div>
+        <div class="row align-items-end mb-3">
+          <div class="col-lg-3 d-none d-lg-block">
+            <img src="./assets/images/frontend-pages/banner-top-left.svg" class="ms-n2 w-100" alt="banner-top-left">
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center align-items-center gap-9">
+              <p class="text-muted fs-5 mb-0 fw-bold">Answer more tickets with all-in-one customer care solution.
+              </p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4 my-4 position-relative z-1">
+              <a href="../main/authentication-login.html" class="btn btn-primary">Get started</a>
+              <a href="../main/authentication-login.html" class="btn btn-primary">Become a partner</a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-9 position-relative z-1 pb-lg-13">
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-3 round-54 shadow"
+                href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Bootstrap">
+                <img src="./assets/images/frontend-pages/icon-bootstrap.svg" width="28" height="28" alt="icon" />
+              </a>
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-3 round-54 shadow"
+                href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Sass">
+                <img src="./assets/images/frontend-pages/icon-sass.svg" width="28" height="28" alt="icon" />
+              </a>
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-3 round-54 shadow"
+                href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Gulp">
+                <img src="./assets/images/frontend-pages/icon-gulp.svg" width="28" height="28" alt="icon" />
+              </a>
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-3 round-54 shadow"
+                href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Figma">
+                <img src="./assets/images/frontend-pages/icon-figma.svg" width="24" height="24" alt="icon" />
+              </a>
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-3 round-54 shadow"
+                href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Apexchart">
+                <img src="./assets/images/frontend-pages/icon-apexchart.svg" width="24" height="24" alt="icon" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <img src="./assets/images/frontend-pages/banner-top-right.svg" class="me-n2 w-100" alt="banner-top-right">
+          </div>
+        </div>
+
+
+        <div class="custom-container">
+          <div class="py-3 rounded-3 overflow-hidden">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <h2 class="fs-10 fw-bolder text-center mb-10 pb-lg-4 px-2 px-md-0">
+                  Trusted by 500+ Businesses Worldwide
+                </h2>
+              </div>
+            </div>
+            <div class="w-100 text-nowrap">
+              <div class="slide-animation1 d-flex gap-7 text-nowrap">
+                <!-- Feature Item 1 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-wand text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 2 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-table text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 3 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-stack-2 text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 4 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-puzzle text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 5 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-switch-2 text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 1 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-wand text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 2 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-table text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 3 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-stack-2 text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 4 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-puzzle text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+                <!-- Feature Item 5 -->
+                <div class="feature-item bg-white rounded-3 gap-8 d-flex align-items-center justify-content-center">
+                  <i class="ti ti-switch-2 text-primary fs-8" aria-hidden="true"></i>
+                  <p class="fs-3 fw-semibold mb-0 gap-3">Brand A</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+    <!-- banner End -->
+
+    <!-- Increase your revenue Start -->
+    <section class="border-top py-10">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fs-10 fw-bolder">Increase your revenue and overall performance with JooUp’s AI-driven tools</h2>
+            <p class="fs-4 mb-0">
+              Our modular platform is designed to optimize every aspect of your webstore and keep you ahead in a
+              competitive market.
+              Utilize dynamic search results, tailored product recommendations, targeted email campaigns, and audience
+              segmentation to drive sales across the entire customer journey.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6 col-lg-6">
+                <div class="card shadow-none bg-warning-subtle rounded-24">
+                  <div class="card-body text-center py-14">
+                    <img src="./assets/images/frontend-pages/icon-briefcase.svg" alt="icon">
+                    <h5 class="my-3 fw-bolder fs-5">55%</h5>
+                    <p class="mb-0 fs-4">Reduction waiting time</p>
+                  </div>
+                </div>
+                <div class="card shadow-none bg-secondary-subtle rounded-24">
+                  <div class="card-body text-center py-14">
+                    <img src="./assets/images/frontend-pages/icon-briefcase.svg" alt="icon">
+                    <h5 class="my-3 fw-bolder fs-5">55%</h5>
+                    <p class="mb-0 fs-4">Reduction waiting time</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-6">
+                <div class="card shadow-none bg-secondary-subtle rounded-24">
+                  <div class="card-body text-center py-14">
+                    <img src="./assets/images/frontend-pages/icon-speech-bubble.svg" alt="icon">
+                    <h5 class="my-3 fw-bolder fs-5">30%</h5>
+                    <p class="mb-0 fs-4">Decrease in Operational Expenses</p>
+                  </div>
+                </div>
+                <div class="card shadow-none bg-danger-subtle rounded-24">
+                  <div class="card-body text-center pt-14 pb-5 mb-8">
+                    <img src="./assets/images/frontend-pages/icon-favorites.svg" alt="icon">
+                    <h5 class="my-3 fw-bolder fs-5">60%</h5>
+                    <p class="mb-0 fs-4">Automation rate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-lg-5">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/images/blog/blog-img1.png" class="d-block w-100" alt="modernize-img">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/blog/blog-img2.png" class="d-block w-100" alt="modernize-img">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h2 class="fs-10 fw-bolder mt-4 mt-lg-0 text-center text-lg-start">Enhance the user experience to elevate customer satisfaction</h2>
+            <p class="fs-4 mb-0  text-center text-lg-start">
+              Our AI personalizes the online shopping experience, boosting conversions and customer loyalty while
+              reducing costs.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="row justify-content-center">
+              <div class="col-6 block d-lg-none">
+                <img src="./assets/images/blog/blog-img12.png" alt="blog-img-12" class="img-fluid">
+              </div>
+            </div>
+            <h2 class="fs-10 fw-bolder text-center text-lg-start">Automatically respond to every message</h2>
+            <p class="fs-4 mb-0 text-center text-lg-start">
+              Quickly engage with every message, reaction, and mention to attract customers faster and capture every
+              opportunity.
+            </p>
+            <div class="d-flex justify-content-center align-items-center gap-4 my-4 position-relative z-1">
+              <a href="../main/authentication-login.html" class="btn btn-primary">Get started</a>
+              <a href="../main/authentication-login.html" class="btn btn-primary">Become a partner</a>
+            </div>
+          </div>
+          <div class="col-5 d-none d-lg-block">
+            <img src="./assets/images/blog/blog-img12.png" alt="blog-img-12" class="img-fluid">
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- Increase your revenue end -->
+
+    <!-- Satisfied Clients Globally start -->
+    <section class="border-top py-10">
+      <div class="custom-container">
+        <div class="row">
+          <div class="row">
+            <div class="col-lg-5">
+              <h2 class="fs-10 fw-bolder">Satisfied Clients Globally </h2>
+              <p class="fs-4 mb-0">
+                Client Testimonials from Around the World
+              </p>
+            </div>
+          </div>
+
+
+          <div class="owl-carousel leadership-carousel owl-theme mt-5">
+            <div class="item">
+              <div class="card card-review overflow-hidden p-9">
+                <div class="row g-0 flex-md-row flex-column">
+                  <div class="col-md-4">
+                    <img src="./assets/images/blog/blog-img13.webp" class="review-img" alt="Reviewer Image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Johny </h5>
+                      <p class="role-text">Loyal customers</p>
+                      <div class="star-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p class="card-text">Great product! Good quality, comfortable to use and great value for money. I
+                        will definitely buy again.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card card-review overflow-hidden p-9">
+                <div class="row g-0 flex-md-row flex-column">
+                  <div class="col-md-4">
+                    <img src="./assets/images/blog/blog-img13.webp" class="review-img" alt="Reviewer Image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Johny </h5>
+                      <p class="role-text">Loyal customers</p>
+                      <div class="star-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p class="card-text">Great product! Good quality, comfortable to use and great value for money. I
+                        will definitely buy again.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card card-review overflow-hidden p-9">
+                <div class="row g-0 flex-md-row flex-column">
+                  <div class="col-md-4">
+                    <img src="./assets/images/blog/blog-img13.webp" class="review-img" alt="Reviewer Image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Johny </h5>
+                      <p class="role-text">Loyal customers</p>
+                      <div class="star-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p class="card-text">Great product! Good quality, comfortable to use and great value for money. I
+                        will definitely buy again.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card card-review overflow-hidden p-9">
+                <div class="row g-0 flex-md-row flex-column">
+                  <div class="col-md-4">
+                    <img src="./assets/images/blog/blog-img13.webp" class="review-img" alt="Reviewer Image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Johny </h5>
+                      <p class="role-text">Loyal customers</p>
+                      <div class="star-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p class="card-text">Great product! Good quality, comfortable to use and great value for money. I
+                        will definitely buy again.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card card-review overflow-hidden p-9">
+                <div class="row g-0 flex-md-row flex-column">
+                  <div class="col-md-4">
+                    <img src="./assets/images/blog/blog-img13.webp" class="review-img" alt="Reviewer Image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Johny </h5>
+                      <p class="role-text">Loyal customers</p>
+                      <div class="star-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p class="card-text">Great product! Good quality, comfortable to use and great value for money. I
+                        will definitely buy again.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Satisfied Clients Globally end -->
+
+    <!-- Tabs Start -->
+    <section class="py-10">
+      <div class="border-top pt-5">
+        <ul class="nav team-tab nav-tabs   container-fluid" id="myTab" role="tablist">
+          <li class="nav-item " role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 active border-end justify-content-center d-flex align-items-center rounded-0"
+              id="Retail-tab" data-bs-toggle="tab" data-bs-target="#Retail-tab-pane" type="button" role="tab"
+              aria-controls="Retail-tab-pane" aria-selected="true">
+              <i class="ti ti-shopping-cart fs-7 me-2"></i>
+              Retail
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 border-end d-flex justify-content-center align-items-center rounded-0"
+              id="E-commerce-tab" data-bs-toggle="tab" data-bs-target="#E-commerce-tab-pane" type="button" role="tab"
+              aria-controls="E-commerce-tab-pane" aria-selected="false">
+              <i class="ti ti-credit-card fs-7 me-2"></i>
+              E-commerce
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 border-end d-flex justify-content-center align-items-center rounded-0"
+              id="Tourism-tab" data-bs-toggle="tab" data-bs-target="#Tourism-tab-pane" type="button" role="tab"
+              aria-controls="Tourism-tab-pane" aria-selected="false">
+              <i class="ti ti-map fs-7 me-2"></i>
+              Tourism
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Medical-tab" data-bs-toggle="tab" data-bs-target="#Medical-tab-pane" type="button" role="tab"
+              aria-controls="Medical-tab-pane" aria-selected="false">
+              <i class="ti ti-vaccine-bottle fs-7 me-2"></i>
+              Medical
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Finance-tab" data-bs-toggle="tab" data-bs-target="#Finance-tab-pane" type="button" role="tab"
+              aria-controls="Finance-tab-pane" aria-selected="false">
+              <i class="ti ti-currency-dollar fs-7 me-2"></i>
+              Finance
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Education-tab" data-bs-toggle="tab" data-bs-target="#Education-tab-pane" type="button" role="tab"
+              aria-controls="Education-tab-pane" aria-selected="false">
+              <i class="ti ti-school fs-7 me-2"></i>
+              Education
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Hotel-tab" data-bs-toggle="tab" data-bs-target="#Hotel-tab-pane" type="button" role="tab"
+              aria-controls="Hotel-tab-pane" aria-selected="false">
+              <i class="ti ti-bed fs-7 me-2"></i>
+              Hotel
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Real-estate-tab" data-bs-toggle="tab" data-bs-target="#Real-estate-tab-pane" type="button" role="tab"
+              aria-controls="Real-estate-tab-pane" aria-selected="false">
+              <i class="ti ti-home fs-7 me-2"></i>
+              Real estate
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Car-tab" data-bs-toggle="tab" data-bs-target="#Car-tab-pane" type="button" role="tab"
+              aria-controls="Car-tab-pane" aria-selected="false">
+              <i class="ti ti-car fs-7 me-2"></i>
+              Car
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Technology-Consulting-tab" data-bs-toggle="tab" data-bs-target="#Technology-Consulting-tab-pane"
+              type="button" role="tab" aria-controls="Technology-Consulting-tab-pane" aria-selected="false">
+              <i class="ti ti-device-laptop fs-7 me-2"></i>
+              Technology Consulting
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Entertainment-tab" data-bs-toggle="tab" data-bs-target="#Entertainment-tab-pane" type="button"
+              role="tab" aria-controls="Entertainment-tab-pane" aria-selected="false">
+              <i class="ti ti-music fs-7 me-2"></i>
+              Entertainment
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Cuisine-tab" data-bs-toggle="tab" data-bs-target="#Cuisine-tab-pane" type="button" role="tab"
+              aria-controls="Cuisine-tab-pane" aria-selected="false">
+              <i class="ti ti-tools-kitchen-2 fs-7 me-2"></i>
+              Cuisine
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Fitness-Health-tab" data-bs-toggle="tab" data-bs-target="#Fitness-Health-tab-pane" type="button"
+              role="tab" aria-controls="Fitness-Health-tab-pane" aria-selected="false">
+              <i class="ti ti-heartbeat fs-7 me-2"></i>
+              Fitness & Health
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Transportation-tab" data-bs-toggle="tab" data-bs-target="#Transportation-tab-pane" type="button"
+              role="tab" aria-controls="Transportation-tab-pane" aria-selected="false">
+              <i class="ti ti-bus fs-7 me-2"></i>
+              Transportation
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link py-7 fs-5 fw-semibold w-100 d-flex justify-content-center align-items-center rounded-0"
+              id="Legal-tab" data-bs-toggle="tab" data-bs-target="#Legal-tab-pane" type="button" role="tab"
+              aria-controls="Legal-tab-pane" aria-selected="false">
+              <i class="ti ti-scale fs-7 me-2"></i>
+              Legal
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid mb-4">
+        <div class="">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Retail-tab-pane" role="tabpanel"
+              aria-labelledby="Retail-tab-pane" tabindex="0">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 custom-card-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="./assets/images/profile/user-13.webp" class="rounded-1 img-fluid" width="90">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">ProductGenius</span>
+                        <h3 class="card-title mt-3">AI Product Consulting</h3>
+                        <p class="card-subtitle">Personalized product advise based on customer</p>
+                        <div><span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                          <span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                        </div>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-warning">
+                              <i class="ti ti-users fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Users</h6>
+                              <h4 class="mb-0 fs-5">368</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-primary">
+                              <i class="ti ti-message-circle fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Comments</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-danger">
+                              <i class="ti ti-heart fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Likes</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 custom-card-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="./assets/images/profile/user-13.webp" class="rounded-1 img-fluid" width="90">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">ProductGenius</span>
+                        <h3 class="card-title mt-3">AI Product Consulting</h3>
+                        <p class="card-subtitle">Personalized product advise based on customer</p>
+                        <div><span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                          <span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                        </div>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-warning">
+                              <i class="ti ti-users fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Users</h6>
+                              <h4 class="mb-0 fs-5">368</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-primary">
+                              <i class="ti ti-message-circle fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Comments</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-danger">
+                              <i class="ti ti-heart fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Likes</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-primary">See more</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="E-commerce-tab-pane" role="tabpanel" aria-labelledby="E-commerce-tab-pane"
+              tabindex="0">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 custom-card-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="./assets/images/profile/user-13.webp" class="rounded-1 img-fluid" width="90">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">ProductGenius</span>
+                        <h3 class="card-title mt-3">AI Product Consulting</h3>
+                        <p class="card-subtitle">Personalized product advise based on customer</p>
+                        <div><span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                          <span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                        </div>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-warning">
+                              <i class="ti ti-users fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Users</h6>
+                              <h4 class="mb-0 fs-5">368</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-primary">
+                              <i class="ti ti-message-circle fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Comments</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-danger">
+                              <i class="ti ti-heart fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Likes</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 custom-card-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="./assets/images/profile/user-13.webp" class="rounded-1 img-fluid" width="90">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">ProductGenius</span>
+                        <h3 class="card-title mt-3">AI Product Consulting</h3>
+                        <p class="card-subtitle">Personalized product advise based on customer</p>
+                        <div><span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                          <span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                        </div>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-warning">
+                              <i class="ti ti-users fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Users</h6>
+                              <h4 class="mb-0 fs-5">368</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-primary">
+                              <i class="ti ti-message-circle fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Comments</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-danger">
+                              <i class="ti ti-heart fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Likes</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="Tourism-tab-pane" role="tabpanel" aria-labelledby="Tourism-tab-pane"
+              tabindex="0">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 custom-card-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="./assets/images/profile/user-13.webp" class="rounded-1 img-fluid" width="90">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">ProductGenius</span>
+                        <h3 class="card-title mt-3">AI Product Consulting</h3>
+                        <p class="card-subtitle">Personalized product advise based on customer</p>
+                        <div><span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                          <span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                        </div>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-warning">
+                              <i class="ti ti-users fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Users</h6>
+                              <h4 class="mb-0 fs-5">368</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-primary">
+                              <i class="ti ti-message-circle fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Comments</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-danger">
+                              <i class="ti ti-heart fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Likes</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 custom-card-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <img src="./assets/images/profile/user-13.webp" class="rounded-1 img-fluid" width="90">
+                      <div class="mt-n2">
+                        <span class="badge text-bg-primary">ProductGenius</span>
+                        <h3 class="card-title mt-3">AI Product Consulting</h3>
+                        <p class="card-subtitle">Personalized product advise based on customer</p>
+                        <div><span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                          <span class="mb-1 badge rounded-pill text-bg-light">Light</span>
+                        </div>
+                      </div>
+                      <div class="row mt-3 justify-content-center">
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-warning">
+                              <i class="ti ti-users fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Users</h6>
+                              <h4 class="mb-0 fs-5">368</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-primary">
+                              <i class="ti ti-message-circle fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Comments</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="py-2 px-3 text-bg-light rounded-4 d-flex align-items-center">
+                            <span class="text-danger">
+                              <i class="ti ti-heart fs-8"></i>
+                            </span>
+                            <div class="ms-2 text-start">
+                              <h6 class="fw-normal text-muted mb-0">Likes</h6>
+                              <h4 class="mb-0 fs-5">1200</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- multi platform start -->
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <div class="text-center">
+              <h2 class="fs-10 fw-bolder">Multi-platform Integration </h2>
+              <p class="fs-4 mb-0">
+                Integrate your AI Agent into multiple platforms to advise and answer your customers!
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-lg-3">
+                <div class="card border-start border-danger">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-start gap-4">
+                      <img src="./assets/images/multi-platform-icon/messenger.png" alt="Messenger" width="30">
+                      <div>
+                        <h4 class="card-title fs-7">Messenger</h4>
+                        <p class="card-subtitle">Jooup Support Team</p>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p>Integrate with Facebook Messenger to receive and respond to messages on the Facebook platform
+                      </p>
+                    </div>
+                    <div class="">
+                      <button class="btn btn-primary w-100">Support</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card border-start border-info">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-start gap-4">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo"
+                        width="30">
+                      <div>
+                        <h4 class="card-title fs-7">Zalo</h4>
+                        <p class="card-subtitle">Jooup Support Team</p>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p>Integrate with Facebook Messenger to receive and respond to messages on the Facebook platform
+                      </p>
+                    </div>
+                    <div class="">
+                      <button class="btn btn-primary w-100">Support</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card border-start border-primary">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-start gap-4">
+                      <img src="./assets/images/multi-platform-icon/telegram.png" alt="Messenger" width="30">
+                      <div>
+                        <h4 class="card-title fs-7">Telegram</h4>
+                        <p class="card-subtitle">Jooup Support Team</p>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p>Integrate with Facebook Messenger to receive and respond to messages on the Facebook platform
+                      </p>
+                    </div>
+                    <div class="">
+                      <button class="btn btn-primary w-100">Support</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="card border-start border-success">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-start gap-4">
+                      <img src="./assets/images/multi-platform-icon/integration.png" alt="Messenger" width="30">
+                      <div>
+                        <h4 class="card-title fs-7">API</h4>
+                        <p class="card-subtitle">Jooup Support Team</p>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p>Integrate with Facebook Messenger to receive and respond to messages on the Facebook platform
+                      </p>
+                    </div>
+                    <div class="">
+                      <button class="btn btn-primary w-100">Support</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- multi platform end -->
+    </section>
+    <!-- Tabs end -->
+
+    <!-- select packgage start-->
+    <section class="py-5 py-md-14 py-lg-12 border-top">
+      <div class="custom-container">
+        <div class="">
+          <div class="">
+            <h2 class="fs-10 fw-bolder pb-lg-2 text-center">Select Package
+            </h2>
+            <p class="fs-4 mb-0 fw-bold text-center">
+              CHOOSE THE BEST PLAN FOR YOU
+            </p>
+          </div>
+
+          <div class="row my-sm-5 my-4">
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="card p-7 mb-0 rounded-3 border">
+                <h3 class="fs-6 fw-bolder mb-0 badge rounded-pill bg-success-subtle text-success">PERSONAL PACKAGE</h3>
+                <p class="fs-2 mt-3 pb-sm-7 pb-3 mb-0 fw-bold border-bottom">
+                  For individuals, students, and those new to working with AI Agents
+                </p>
+                <h3 class="fs-3 fw-normal mt-sm-7 mt-3 text-muted">
+                  <span class="fs-10 fw-bolder text-dark">200.000 VNĐ
+                  </span>
+                  <br>
+                  /month
+                </h3>
+                <div class="my-sm-7 my-3 d-flex flex-column gap-3">
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">Full source code</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">Documentation</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      Project
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      Technical
+                      Support
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      Free
+                      Updates
+                    </p>
+                  </div>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-success">Purchase Now</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="card p-7 mb-0 rounded-3 border">
+                <h3 class="fs-6 fw-bolder mb-0 badge rounded-pill bg-primary-subtle text-primary">PERSONAL PACKAGE</h3>
+                <p class="fs-2 mt-3 mb-0 pb-sm-7 pb-3 fw-bold border-bottom">
+                  Use for unlimited end products end users
+                  can’t be charged for.
+                </p>
+                <h3 class="fs-3 fw-normal mt-sm-7 mt-3 text-muted">
+                  <span class="fs-10 fw-bolder text-dark">2.369.000 VNĐ</span>
+                  <br>
+                  /month
+                </h3>
+                <div class="my-sm-7 my-3 d-flex flex-column gap-3">
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">Full source code</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">Documentation</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      <span class="fw-bolder">One</span>
+                      Project
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      <span class="fw-bolder">One Year</span>
+                      Technical
+                      Support
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      <span class="fw-bolder">One Year</span>
+                      Free
+                      Updates
+                    </p>
+                  </div>
+                </div>
+                <button class="btn btn-primary">Purchase Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card p-7 mb-0 rounded-3 border">
+                <h3 class="fs-6 fw-bolder mb-0 badge rounded-pill bg-danger-subtle text-danger">LARGE CORPORATION
+                  PACKAGE</h3>
+                <p class="fs-2 mt-3 pb-sm-7 pb-3 mb-0 fw-bold border-bottom">
+                  Use in unlimited end products end users
+                  can be charged for.
+                </p>
+                <h3 class="fs-3 fw-normal mt-sm-7 mt-3 text-muted">
+                  <span class="fs-10 fw-bolder text-dark">Contact</span>
+                </h3>
+                <div class="my-sm-7 my-3 d-flex flex-column gap-3">
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">Full source code</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">Documentation</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold mb-0 text-dark">Use in SaaS app</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      <span class="fw-bolder">One</span>
+                      Project
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      <span class="fw-bolder">One Year</span>
+                      Technical
+                      Support
+                    </p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <img src="./assets/images/frontend-pages/icon-circle-check.svg" alt="">
+                    <p class="fs-3 fw-bold text-dark mb-0">
+                      <span class="fw-bolder">One Year</span>
+                      Free
+                      Updates
+                    </p>
+                  </div>
+                </div>
+                <button class="btn btn-danger">Contact now</button>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <p class="fs-4 fw-bold text-center mb-7">Secured payment with PayPal & Razorpay</p>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap">
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Visa">
+                    <img src=" ./assets/images/frontend-pages/visa.png" alt="visa">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Mastercard">
+                    <img src="./assets/images/frontend-pages/mastercard.png" alt="mastercard">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Americanexpress">
+                    <img src="./assets/images/frontend-pages/americanexpress.png" alt="americanexpress">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Paypal">
+                    <img src="./assets/images/frontend-pages/paypal.png" alt="paypal">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Maestro">
+                    <img src="./assets/images/frontend-pages/maestro.png" alt="maestro">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JCB">
+                    <img src="./assets/images/frontend-pages/jcb.png" alt="jcb">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Dinersclub">
+                    <img src="./assets/images/frontend-pages/dinersclub.png" alt="dinersclub">
+                  </a>
+                  <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Discover">
+                    <img src="./assets/images/frontend-pages/discover.png" alt="discover">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- select packgage end-->
+
+    <!-- Case study start-->
+    <section class="py-10 border-top">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <div class="text-center">
+              <h2 class="fs-10 fw-bolder">Case study </h2>
+            </div>
+          </div>
+        </div>
+        <div class="card data-shadow rounded-3 mb-7">
+          <div class="row">
+            <div class="col-lg-6 pe-lg-0">
+              <div class="blog-bg d-flex flex-column justify-content-between p-9 h-100 rounded-start-3 flex-grow-1">
+                <img src="./assets/images/profile/user-6.jpg" alt="user" width="44" height="44" class="rounded-circle">
+                <div class="d-flex justify-content-end">
+                  <p class="fs-2 py-1 px-2 bg-white rounded-pill mb-0">2 min Read</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ps-lg-0">
+              <div class="p-7 p-lg-5 flex-grow-1 rounded-end-3">
+                <div class="py-4 d-flex flex-column gap-3">
+                  <div class="d-flex">
+                    <p class="fs-2 px-2 rounded-pill bg-muted bg-opacity-25 text-dark mb-0">Your case here
+                    </p>
+                  </div>
+                  <h2 class="fw-bolder fs-14 mb-0">
+                    Heading for this case study here
+                  </h2>
+                  <p class="mb-0">
+                    Short desciption for this case
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-9">
+                      <div class="d-flex gap-2">
+                        <i class="ti ti-eye fs-5 text-dark"></i>
+                        <p class="mb-0 fs-2 fw-semibold text-dark">6941</p>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="ti ti-message fs-5 text-dark"></i>
+                        <p class="mb-0 fs-2 fw-semibold text-dark">3</p>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <i class="ti ti-circle"></i>
+                      <p class="mb-0 fs-2 fw-semibold text-dark">Tue, May 2</p>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-primary"><i class="fa fa-long-arrow-alt-right fs-6"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Case study end-->
+
+    <!-- get a quote start -->
+    <section class="bg-primary py-9">
+      <div class="container-fluid">
+        <div class="d-flex gap-3 justify-content-center align-items-center flex-md-nowrap flex-wrap">
+          <ul class="hstack mb-0">
+            <li class="ms-n8">
+              <a href="javascript:void(0)" class="me-1">
+                <img src="./assets/images/profile/user-5.jpg" class="rounded-circle border border-2 border-white"
+                  width="44" height="44" alt="modernize-img">
+              </a>
+            </li>
+            <li class="ms-n8">
+              <a href="javascript:void(0)" class="me-1">
+                <img src="./assets/images/profile/user-2.jpg" class="rounded-circle  border-2 border-white" width="44"
+                  height="44" alt="modernize-img">
+              </a>
+            </li>
+          </ul>
+          <p class="text-white fs-4 mb-0 text-md-start text-center">Searching for a Top-Tier Web Solution?</p>
+          <a href="javascript:void(0)" class="text-white fs-4 fw-semibold text-underline">Get A Quote</a>
+        </div>
+      </div>
+    </section>
+    <!-- get a quote end -->
+
+    <!-- Blog Start -->
+    <section class="py-5 py-md-14 py-lg-12">
+      <div class="custom-container">
+        <div class="rounded-24 bg-primary-subtle py-5 py-md-14 my-md-2">
+          <div class="px-md-12 px-4">
+            <h2 class="fs-10 fw-bolder mb-5 pb-lg-2">Blog
+            </h2>
+          </div>
+          <div class="mb-14 pb-lg-3">
+            <div class="owl-carousel template-carousel owl-theme">
+              <div class="item rounded overflow-hidden">
+                <a target="_blank" href="../main/index.html">
+                  <img src="./assets/images/demos/demo-main.jpg" alt="template">
+                </a>
+              </div>
+              <div class="item rounded overflow-hidden">
+                <a target="_blank" href="../dark/index.html">
+                  <img src="./assets/images/demos/demo-dark.jpg" alt="template">
+                </a>
+              </div>
+              <div class="item rounded overflow-hidden">
+                <a target="_blank" href="../horizontal/index.html">
+                  <img src="./assets/images/demos/demo-horizontal.jpg" alt="template">
+                </a>
+              </div>
+              <div class="item rounded overflow-hidden">
+                <a target="_blank" href="../minisidebar/index.html">
+                  <img src="./assets/images/demos/demo-minisidebar.jpg" alt="template">
+                </a>
+              </div>
+              <div class="item rounded overflow-hidden">
+                <a target="_blank" href="../rtl/index.html">
+                  <img src="./assets/images/demos/demo-rtl.jpg" alt="template">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog End -->
+  </div>
+
+
+  <!-- Footer Start -->
+  <!-- ------------------------------------- -->
+  <footer class="border-top pt-10">
+    <div class="custom-container">
+      <div class="border-bottom">
+        <div class="row mb-sm-12 mb-4">
+          <div class="col-4 col-lg text-center text-lg-start">
+            <!-- <h3 class="fs-4 fw-semibold mb-7">Applications</h3> -->
+            <img src="./assets/images/logos/Jooup-logo.png" alt="joo-up-logo" class="img-fluid">
+            <p class="fs-5 fw-normal text-black mt-4">JooUp is the most advanced AI platform for building and deploying
+              intelligent chatbots and AI agents.</p>
+          </div>
+          <div class="col-4 col-lg text-center text-lg-start">
+            <h3 class="fs-4 fw-semibold mb-7">About us</h3>
+            <ul class="d-flex flex-column gap-9">
+              <li>
+                <a href="../main/form-basic.html" class="fs-4 text-body link-primary">Company
+                </a>
+              </li>
+              <li>
+                <a href="../main/form-horizontal.html" class="fs-4 text-body link-primary">Our team
+                </a>
+              </li>
+              <li>
+                <a href="../main/form-wizard.html" class="fs-4 text-body link-primary">Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="../main/form-bootstrap-validation.html" class="fs-4 text-body link-primary">Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg text-center text-lg-start">
+            <h3 class="fs-4 fw-semibold mb-7">Contact Us</h3>
+            <ul class="d-flex flex-column gap-9">
+              <li>
+                <a href="../main/table-basic.html" class="fs-4 text-body link-primary">Become a Partner
+                </a>
+              </li>
+              <li>
+                <a href="../main/table-dark-basic.html" class="fs-4 text-body link-primary">Email</a>
+              </li>
+              <li>
+                <a href="../main/table-sizing.html" class="fs-4 text-body link-primary">Address
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg text-center text-lg-start mt-4 mt-lg-0 ">
+            <h3 class="fs-4 fw-semibold mb-7">Category</h3>
+            <ul class="d-flex flex-column gap-9">
+              <li>
+                <a href="../main/table-basic.html" class="fs-4 text-body link-primary">Pricing
+                </a>
+              </li>
+              <li>
+                <a href="../main/table-dark-basic.html" class="fs-4 text-body link-primary">
+                  Demo</a>
+              </li>
+              <li>
+                <a href="../main/table-sizing.html" class="fs-4 text-body link-primary">Blog
+                </a>
+              </li>
+              <li>
+                <a href="../main/table-layout-coloured.html" class="fs-4 text-body link-primary">FAQ </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg text-center text-lg-start mt-4 mt-lg-0">
+            <h3 class="fs-4 fw-semibold mb-7">Follow us</h3>
+            <div class="d-flex gap-9">
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Facebook">
+                <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="facebook"
+                  style="width: 22px; height: 22px;">
+              </a>
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Instagram">
+                <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="Instargram"
+                  style="width: 22px; height: 22px;">
+              </a>
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="X">
+                <img src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000" alt="X"
+                  style="width: 22px; height: 22px;">
+              </a>
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Linked">
+                <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="Linked"
+                  style="width: 22px; height: 22px;">
+              </a>
+              <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-title="Youtube">
+                <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="Youtube"
+                  style="width: 22px; height: 22px;">
+              </a>
+            </div>
+            <div class="mt-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="120"
+                alt="Google Play" class="cursor-pointer">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" width="120"
+                alt="App Store" class="cursor-pointer">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between py-7 flex-md-nowrap flex-wrap gap-sm-0 gap-3">
+        <div class="d-flex gap-3 align-items-center">
+          <img src="./assets/images/logos/Jooup-logo.png" alt="icon" style="width: 10%;">
+          <p class="fs-4 mb-0">Copyright © 2025 by JooUp </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- ------------------------------------- -->
+  <!-- Footer End -->
+  <!-- ------------------------------------- -->
+
+  <!-- Scroll Top -->
+  <a href="javascript:void(0)"
+    class="top-btn btn btn-primary d-flex align-items-center justify-content-center round-54 p-0 rounded-circle">
+    <i class="ti ti-arrow-up fs-7"></i>
+  </a>
+
+  <script src="./assets/js/vendor.min.js"></script>
+  <!-- Import Js Files -->
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="./assets/js/theme/app.init.js"></script>
+  <script src="./assets/js/theme/theme.js"></script>
+  <script src="./assets/js/theme/app.min.js"></script>
+
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="./assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="./assets/js/frontend-landingpage/homepage.js"></script>
+</body>
+
+</html>

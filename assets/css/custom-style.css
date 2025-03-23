@@ -1,0 +1,64 @@
+.topbar{
+    position: static;
+}
+
+.topbar .navbar .navbar-nav .nav-item.dropdown .dropdown-menu-start {
+    right: auto;
+    left: 0;
+    top: 100%
+}
+
+
+body {
+    background-color: #f8f9fa;
+  }
+  .card-review {
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .card-review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+  }
+
+  .review-img {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .star-rating {
+    color: #FFC107;
+  }
+
+  .role-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  @media (max-width: 576px) {
+    .flex-md-row {
+      flex-direction: column !important;
+    }
+    .review-img {
+      height: 250px;
+    }
+  }
+
+
+
+  .custom-card-item {
+    transition: all 0.3s ease;
+  }
+  .custom-card-item:hover {
+    transform: translateY(-5px);
+  }
+
+  /* border-top */
+  .border-top{
+    border-top: 3px solid!important;
+  }
