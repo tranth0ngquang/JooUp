@@ -1,28 +1,208 @@
-.topbar{
-    position: static;
-}
+  /* Approachable Teal #B4EFE4 */
+  /* Flexible Teal #00B3B6 */
+  /* Trustworthy Teal #045D5D */
 
-.topbar .navbar .navbar-nav .nav-item.dropdown .dropdown-menu-start {
+  /* gpt style strt */
+  /* ===== CUSTOM STYLE FOR JOOUP WEBSITE ===== */
+
+  :root {
+    /* Color Palette */
+    --color-primary: #00B3B6;
+    --color-primary-hover: #045D5D;
+    --color-bg-soft: #B4EFE4;
+    --color-bg-light: #F8F9FA;
+    --color-text-dark: #011212;
+    --color-text-subtle: #4C5D66;
+    --color-white: #ffffff;
+    --color-yellow: #FFCE00;
+    --color-orange: #FF6700;
+    --color-pink: #FF2970;
+
+    /* Typography */
+    --font-heading: 'Passion One', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+
+    /* Sizes */
+    --radius-default: 12px;
+    --padding-default: 12px 24px;
+  }
+
+
+  
+
+  /* ========== TYPOGRAPHY ========== */
+  .heading-custom {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    line-height: 1.1;
+  }
+
+  .subheading-custom {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .text-body-custom {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-subtle);
+    line-height: 1.6;
+  }
+
+  .text-muted-custom {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-muted);
+  }
+
+  .text-accent {
+    color: var(--color-primary);
+  }
+
+    /* ===== CARD TYPOGRAPHY ===== */
+    .card-heading-custom {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-text-dark);
+      margin-bottom: 8px;
+    }
+  
+    .card-subheading-custom {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-text-subtle);
+      margin-bottom: 4px;
+    }
+  
+    .card-text-custom {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--color-text-subtle);
+      line-height: 1.5;
+    }
+  
+
+  /* ========== BUTTONS ========== */
+  .btn-custom {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-default);
+    padding: var(--padding-default);
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+  }
+
+  .btn-outline-custom {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-default);
+    padding: var(--padding-default);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-custom:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+    border-color: var(--color-primary-hover);
+  }
+
+  /* ========== CARD STYLE ========== */
+  .card-custom {
+    background-color: var(--color-white);
+    border-radius: var(--radius-default);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    transition: all .5s;
+  }
+  .card-custom:hover{
+    transform: translateY(-5px);
+  }
+
+  /* ========== BACKGROUND ========== */
+  .bg-soft {
+    background-color: var(--color-bg-soft);
+  }
+
+  .bg-light-custom {
+    background-color: var(--color-bg-light);
+  }
+
+
+  .nav-link-custom {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link-custom:hover {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+
+  .section-wrapper {
+    padding: 80px 0;
+  }
+
+
+
+  /* ------gpt style end--------- */
+
+  .bg-theme-light {
+    background-color: var(--color-bg-soft);
+  }
+
+  .bg-theme-normal {
+    background-color: var(--color-primary);
+  }
+
+  .bg-theme-dark {
+    background-color: var(--color-primary-hover)!important;
+  }
+
+  .topbar {
+    position: static;
+  }
+
+  .topbar .navbar .navbar-nav .nav-item.dropdown .dropdown-menu-start {
     right: auto;
     left: 0;
     top: 100%
-}
+  }
 
 
-body {
+  body {
     background-color: #f8f9fa;
   }
+
   .card-review {
     max-width: 700px;
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s;
   }
 
-  .card-review:hover {
+  /* .card-review:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
-  }
+  } */
 
   .review-img {
     border-radius: 12px;
@@ -44,6 +224,7 @@ body {
     .flex-md-row {
       flex-direction: column !important;
     }
+
     .review-img {
       height: 250px;
     }
@@ -54,11 +235,21 @@ body {
   .custom-card-item {
     transition: all 0.3s ease;
   }
+
   .custom-card-item:hover {
     transform: translateY(-5px);
   }
 
   /* border-top */
-  .border-top{
-    border-top: 3px solid!important;
+  .border-top {
+    border-top: 3px solid !important;
+  }
+
+  /* bg-btt-btn */
+  .bg-btt-btn{
+    background-color: var(--color-primary);
+    border: 0px;
+  }
+  .bg-btt-btn:hover{
+    background-color: var(--color-primary-hover);
   }
