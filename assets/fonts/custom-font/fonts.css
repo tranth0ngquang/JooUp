@@ -1,0 +1,72 @@
+/* ===== FONT-FACE SETUP FOR JOOUP BRAND ===== */
+
+/* Passion One - Bold */
+@font-face {
+    font-family: 'Passion One';
+    src: url('PassionOne-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Passion One - Regular */
+  @font-face {
+    font-family: 'Passion One';
+    src: url('PassionOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Poppins - Regular */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Poppins - Bold */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Poppins - Light */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Poppins - Italic */
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  
+  /* ===== DEFAULT FONT SETUP (EXAMPLE) ===== */
+  body {
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 400!important;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Passion One', cursive!important;
+    font-weight: 700!important;
+  }
+  
+  strong {
+    font-family: 'Poppins'!important;
+    font-weight: 700!important;
+  }
+  
+  em {
+    font-family: 'Poppins'!important;
+    font-style: italic!important;
+  }
+  
