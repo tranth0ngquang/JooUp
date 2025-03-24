@@ -179,6 +179,10 @@
     background-color: var(--color-primary-hover)!important;
   }
 
+  .bg-badge{
+    background-color: var(--color-yellow)!important;
+  }
+
   .topbar {
     position: static;
   }
